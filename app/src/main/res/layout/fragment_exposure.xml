@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ExposureFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_exposure_limited"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/exposure_limited"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_exposure_limit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_exposure_limited">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_exposure_limit_yes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/yes" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_exposure_limit_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_smoke"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/smoke"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_exposure_limit" />
+
+    <RadioGroup
+        android:id="@+id/rg_smoke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_smoke">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_smoke_yes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/yes" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_smoke_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_alcoholic_beverages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/alcoholic_beverages"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_smoke" />
+
+    <RadioGroup
+        android:id="@+id/rg_alcoholic_beverages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_alcoholic_beverages">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_zero_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/zero_one" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_two_five"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/two_five" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_five_plus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/five_plus" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_personalized"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/button_color"
+        android:text="@string/personalized_vita"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
